@@ -1,0 +1,44 @@
+#modal-div{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.game-modal{
+    background-color: var(--mc);
+    border: black solid 3px;
+}
+
+.game-modal h2{
+    color: var(--bg);
+}
+
+.game-modal p{
+    color: var(--bg);
+}
+
+.game-modal button{
+    background-color: transparent;
+    color: var(--bg);
+    border: var(--bg) solid 2px;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px){
+    .game-modal{
+        width: 85vw;
+        padding: 5%;
+    }
+}
+  
+/*Desktop*/
+@media only screen and (min-width: 768px){
+    .game-modal{
+        width: 60vw;
+        padding: 3%;
+    }
+}

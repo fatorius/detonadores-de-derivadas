@@ -1,0 +1,31 @@
+.message-div{
+    background-color: var(--mc);
+    border: black solid 3px;
+}
+
+.message-div p{
+    font-size: 1.3rem;
+    color: var(--bg);
+}
+
+.message-div button{
+    font-size: 1rem;
+    background-color: transparent;
+    border: solid var(--bg) 2px;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px){
+    .message-div{
+        width: 70vw;
+        padding: 2%;
+    }
+}
+  
+/*Desktop*/
+@media only screen and (min-width: 768px){
+    .message-div{
+        width: 25vw;
+        padding: 2%;
+    }
+}
