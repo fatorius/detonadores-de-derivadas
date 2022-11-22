@@ -80,7 +80,9 @@ function Navbar(props){
                         setDisplay(false);
                         props.onReset();
                     }}>Resetar progresso</p>
+
                     <p><a href="https://github.com/Kunum/detonadores-de-derivadas" rel="noreferrer" target="_blank">Ver código fonte</a></p>
+                    <p><a href="https://derivadas.kunum.com/speedrun/">Versão speedrun</a></p>
                 </div>
 
                 <br/>
