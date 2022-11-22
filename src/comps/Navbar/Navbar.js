@@ -82,7 +82,7 @@ function Navbar(props){
                     }}>Resetar progresso</p>
 
                     <p><a href="https://github.com/Kunum/detonadores-de-derivadas" rel="noreferrer" target="_blank">Ver código fonte</a></p>
-                    <p><a href="https://derivadas.kunum.com/speedrun/">Versão speedrun</a></p>
+                    <p><a href="https://speedrun.derivadas.kunum.com/speedrun/">Versão speedrun</a></p>
                 </div>
 
                 <br/>
