@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Messages.css";
 
 function Messages(props){
     const [message, setMessage] = useState(props.initial_message);
     
+    useEffect(()=>{
+        setMessage(0);
+    }, [props.phase])
+
     switch (props.phase){
         case 1:
             return (
