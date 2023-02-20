@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
 
 :root{
-  --bg:#2C130E;
+  --bg:#49190f;
+  --bgdark: #2C130E;
   --mc:#ccbebb;
 }
 
@@ -10,7 +11,7 @@ body {
   font-family: 'Stint Ultra Expanded', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg);
+  background: radial-gradient(var(--bg) 40%, var(--bgdark) 100%);
   color: white;
   text-align: center;
   overflow: hidden;
