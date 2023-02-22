@@ -241,6 +241,140 @@ function Messages(props){
                 </div>,
                 <></>][message]
             );
+        case 46:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Encontramos mais uma pedra diferenciada, dessa vez, é o seno!
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <div className="message-div">
+                        <p>
+                            Vamos aprender agora uma nova regrinha: <b>A derivada do seno é o cosseno</b>
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <div className="message-div">
+                        <p>
+                            Portanto, digite cos(x)
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <></>
+                ][message]
+            );
+        case 47:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Agora temos outra pedra diferente, o cosseno.
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <div className="message-div">
+                        <p>
+                            Dessa vez a regrinha é: <b>A derivada do cosseno é o menos seno</b>
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <div className="message-div">
+                        <p>
+                            Portanto, digite -sen(x)
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <></>
+                ][message]
+            );
+        case 48:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Aplique a regrinha do <b>A derivada do seno é o cosseno</b> nessa pedra agora.
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <></>
+                ][message]
+            );
+        case 49:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Aplique a regrinha do <b>A derivada do cosseno é o menos seno</b> nessa pedra agora.
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <div className="message-div">
+                        <p>
+                            Lembre-se de fazer o jogo de sinal.
+                        </p>
+                    <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                </div>,
+                    <></>
+                ][message]
+            );
+        case 49:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Aplique a regrinha do <b>A derivada do cosseno é o menos seno</b> nessa pedra agora.
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <div className="message-div">
+                        <p>
+                            Lembre-se de fazer o jogo de sinal.
+                        </p>
+                    <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                </div>,
+                    <></>
+                ][message]
+            );
+        case 50:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Perceba que após 4 derivadas, o seno reaparece, então ficamos
+                            derivando em ciclo.
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <></>
+                ][message]
+            );
+        case 51:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Agora um pouco mais complexo, com dois elementos
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <></>
+                ][message]
+            );
+        case 55:
+            return (
+                [
+                    <div className="message-div">
+                        <p>
+                            Como vimos, depois de quatro derivadas, voltamos ao início, pois as derivadas
+                            trigonometricas são cíclicas
+                        </p>
+                        <button onClick={()=>{setMessage(message+1)}}>Ok</button>
+                    </div>,
+                    <></>
+                ][message]
+            );
         default:
             return (<></>);
     }

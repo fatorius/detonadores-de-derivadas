@@ -278,6 +278,66 @@ let generators = [
     },
     ()=>{
       return turnIntoElement(last_derivative);
+    },
+    ()=>{
+      return [
+        <Stone type="seno">sen(x)</Stone>,
+        "sen(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <Stone type="cosseno">cos(x)</Stone>,
+        "cos(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <Stone type="seno">-sen(x)</Stone>,
+        "-sen(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <Stone type="cosseno">-cos(x)</Stone>,
+        "-cos(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <Stone type="seno">sen(x)</Stone>,
+        "sen(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <div className='horizontaly-centered'><Stone type="seno">sen(x)</Stone> + <Stone type="cosseno">cos(x)</Stone></div>,
+        "sen(x) cos(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <div className='horizontaly-centered'><Stone type="cosseno">cos(x)</Stone> <Stone type="seno">-sen(x)</Stone></div>,
+        "cos(x) -sen(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <div className='horizontaly-centered'><Stone type="seno">-sen(x)</Stone> <Stone type="cosseno">cos(x)</Stone></div>,
+        "-sen(x) cos(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <div className='horizontaly-centered'><Stone type="cosseno">cos(x)</Stone>  <Stone type="seno">-sen(x)</Stone></div>,
+        "cos(x) -sen(x)"
+      ];
+    },
+    ()=>{
+      return [
+        <div className='horizontaly-centered'><Stone type="seno">sen(x)</Stone> <Stone type="cosseno">cos(x)</Stone></div>,
+        "sen(x) cos(x)"
+      ];
     }
   ];
 
@@ -325,7 +385,7 @@ function App(props) {
   switch (phase){
     case 0:
       return (<StartScreen onContinue={passPhase} onReset={onReset} changePhase={changePhase}/>);
-    case 46:
+    case 100:
       return (<Final onReset={onReset} changePhase={changePhase}/>)
     default:
       return (<Fases phase={phase} changePhase={changePhase} onReset={onReset} onContinue={passPhase} target={generators[phase]()}/>);

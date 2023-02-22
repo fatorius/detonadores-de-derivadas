@@ -2,6 +2,15 @@ function ruleOfThumb(termo){
     if (!termo.includes("x")){
         return "0";
     }
+    else if (termo.includes("sen")){
+        return termo.replace('sen', 'cos');
+    }
+    else if (termo.includes("cos(")){
+        if (termo.includes("-cos")){
+            return termo.replace('-cos', 'sen');
+        }
+        return termo.replace('cos', '-sen');
+    }
     else if (!termo.includes("^")){
         return termo.slice(0, -1); 
     }
@@ -45,9 +54,19 @@ function derivar(expression){
     }
     else{
         let derivada = "";
+
+        if (expression.includes("cos") || expression.includes("sen")){
+            for (let j = 0; j < termos.length; j++){
+                derivada += ruleOfThumb(termos[j])
+            }
+            
+            return derivada;
+        }
+        
         for (let j = 0; j < termos.length - 1; j++){
             derivada += ruleOfThumb(termos[j])
         }
+
         return derivada;
     }
 }

@@ -5,7 +5,9 @@ var fill_colors = {
     "grau-1": "#ffcd00",
     "grau-2": "#ff4b00",
     "grau-3": "#338f11",
-    "grau-4": "#006ba3"
+    "grau-4": "#006ba3",
+    "seno": "#E00FAB",
+    "cosseno": "#008df9"
 }
 
 function Rock(props){

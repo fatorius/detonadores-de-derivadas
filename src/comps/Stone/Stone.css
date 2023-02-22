@@ -1,0 +1,33 @@
+.pedra-de-seno{
+    margin-left: 10%;
+    transform: scale(0.66) rotate(0deg);
+    animation: trig-rotate 10s linear 0s infinite;
+}
+
+.pedra-de-cosseno{
+    margin-left: 10%;
+    transform: scale(0.66) rotate(0deg);
+    animation: trig-rotate-reverse 10s linear 0s infinite;
+}
+
+@keyframes trig-rotate {
+    from{
+        transform: scale(0.66) rotate(0deg);
+    }
+    to{
+        transform: scale(0.66) rotate(360deg);
+    }
+}
+
+@keyframes trig-rotate-reverse {
+    from{
+        transform: scale(0.66) rotate(0deg);
+    }
+    to{
+        transform: scale(0.66) rotate(-360deg);
+    }
+}
+
+.pedra-de-cosseno .number-on-rock, .pedra-de-seno .number-on-rock{
+    font-size: 2.3vmax;
+}
